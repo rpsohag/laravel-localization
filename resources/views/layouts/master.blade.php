@@ -19,19 +19,19 @@
                 <div>
                 <ul class="flex flex-wrap items-center font-medium text-sm">
                     <li class="p-4 lg:px-8">
-                        <a class="text-slate-800 hover:text-slate-900" href="#">Home</a>
+                        <a class="text-slate-800 hover:text-slate-900" href="{{ route('home') }}">{{ __('menu.home') }}</a>
                     </li>
                     <li class="p-4 lg:px-8">
-                        <a class="text-slate-800 hover:text-slate-900" href="#">About</a>
+                        <a class="text-slate-800 hover:text-slate-900" href="{{ route('about') }}">{{ __('menu.about') }}</a>
                     </li>
                     <li class="p-4 lg:px-8">
-                        <a class="text-slate-800 hover:text-slate-900" href="#">Contacts</a>
+                        <a class="text-slate-800 hover:text-slate-900" href="#">{{ __('menu.contact') }}</a>
                     </li>
                     <li class="p-4 lg:px-8">
-                        <a class="text-slate-800 hover:text-slate-900" href="#">Services</a>
+                        <a class="text-slate-800 hover:text-slate-900" href="#">{{ __('menu.services') }}</a>
                     </li>
                     <li class="p-4 lg:px-8 relative flex items-center space-x-1" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
-                        <span class="text-slate-800 hover:text-slate-900" href="" :aria-expanded="open" aria-expanded="false">Change Language</span>
+                        <span class="text-slate-800 hover:text-slate-900" href="" :aria-expanded="open" aria-expanded="false">{{ __('menu.change_lang') }}</span>
                         <button class="shrink-0 p-1" :aria-expanded="open" @click.prevent="open = !open" aria-expanded="false">
                             <span class="sr-only">Show submenu for "Flyout Menu"</span>
                             <svg class="w-3 h-3 fill-slate-500" xmlns="http://www.w3.org/2000/svg" width="12" height="12">
